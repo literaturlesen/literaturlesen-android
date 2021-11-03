@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>literaturlesen</title>
+    <meta name="description" content="Keine Verbindung">
+    <meta name="author" content="Kastanie Eins GmbH">
+
+
+    <style>
+    </style>
+
+    <script>
+        function checkAgain() {
+            console.log("Klick");
+            if (typeof AndroidInterface !== "undefined" )
+            {
+                AndroidInterface.reload();
+            }
+            else {
+                location.href="https://app.literaturlesen.com";
+            }
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <h1>literaturlesen hat kein Internet!</h1>
+
+    <p>Bitte stelle eine Internetverbindung her und versuche es erneut!</p>
+    <button class="app-button" onclick="checkAgain()">Nochmal</button>
+
+</body>
+
+</html>
